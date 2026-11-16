@@ -1,2 +1,3 @@
 # MG6
-
+1. It doesn't matter if the for loop is in or out of the update method, the for loop will complete before the update method always. It will lag because the for loop needs to be executed before going to the next frame. It cant be executed over multiple frames which is why it'll slow down/lag.
+2. One problem I had with the platform was that when I was initially standing, I was fine but as soon as I moved left or right, it made me fall through the floor. My problem was that I forgot to include a part of an If statement. I had only put what would happen if the body would move left and right but not if it didn't. Which is why right after I fixed it, it finally worked. 
